@@ -1,0 +1,34 @@
+
+syntax = "proto3";
+
+package singer;
+
+message Singer {
+string id = 1;
+string name = 2;
+string description = 3;
+}
+
+message SearchSingersRequest {
+string query = 1;
+}
+
+message SearchSingersResponse {
+repeated Singer singers = 1;
+}
+
+message CreateSingerRequest {
+
+string name = 1;
+string description = 2;
+}
+
+message CreateSingerResponse {
+Singer singer = 1;
+}
+
+service SingerService {
+
+rpc SearchSingers(SearchSingersRequest) returns (SearchSingersResponse);
+rpc CreateSinger(CreateSingerRequest) returns (CreateSingerResponse);
+}
