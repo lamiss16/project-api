@@ -1,7 +1,7 @@
-Microservices Application with Singer and Album Database
+#Microservices Application with Singer and Album Database
 This is a microservices application built with GraphQL and REST, consisting of multiple services interacting with each other to manage data related to singers and albums.
 
-Overview
+#Overview
 The application is divided into several components:
 
 API Gateway: Acts as the entry point for client requests and handles the routing of requests to the appropriate microservices.
